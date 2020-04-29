@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /keycloak
+  port: 5001
