@@ -23,50 +23,50 @@ Create realm
 http://localhost:8080/auth
 Login
 
-image::login.PNG[,width=600,height=600]
+image::images/login.PNG[,width=400,height=400]
 
 Create Realm
 
-image::images/Realm1.PNG[,width=600,height=600]
+image::images/Realm1.PNG[,width=400,height=400]
 
-image::images/Realm2.PNG[,width=600,height=600]
+image::images/Realm2.PNG[,width=400,height=400]
 
 Create Client
 ^^^^^^^^^^^^^
-image::images/Clients1.PNG[,width=600,height=600]
+image::images/Clients1.PNG[,width=400,height=400]
 
-image::images/Clients2.PNG[,width=600,height=600]
+image::images/Clients2.PNG[,width=400,height=400]
 
-image::images/Clients3.PNG[,width=600,height=600]
+image::images/Clients3.PNG[,width=400,height=400]
 
 Create role
 ^^^^^^^^^^^
-image::images/Roles1.PNG[,width=600,height=600]
+image::images/Roles1.PNG[,width=400,height=400]
 
-image::images/Roles2.PNG[,width=600,height=600]
+image::images/Roles2.PNG[,width=400,height=400]
 
 Create user
 ^^^^^^^^^^^
-image::images/Users1.PNG[,width=600,height=600]
+image::images/Users1.PNG[,width=400,height=400]
 
-image::images/Users2.PNG[,width=600,height=600]
+image::images/Users2.PNG[,width=400,height=400]
 
-image::images/Users3.PNG[,width=600,height=600]
+image::images/Users3.PNG[,width=400,height=400]
 
-image::images/Users4.PNG[,width=600,height=600]
+image::images/Users4.PNG[,width=400,height=400]
 
 Activate User
 ^^^^^^^^^^^^
 
 http://localhost:8080/auth/realms/RealmSpringBoot/account/applications
 
-image::images/loginRealm.PNG[,width=600,height=600]
+image::images/loginRealm.PNG[,width=400,height=400]
 
-image::images/loginRealm2.PNG[,width=600,height=600]
+image::images/loginRealm2.PNG[,width=400,height=400]
 
-image::images/loginRealm3.PNG[,width=600,height=600]
+image::images/loginRealm3.PNG[,width=400,height=400]
 
-image::images/loginRealm4.PNG[,width=600,height=600]
+image::images/loginRealm4.PNG[,width=400,height=400]
 
 Test User
 ^^^^^^^^^
@@ -76,7 +76,7 @@ Test User
 curl -X POST   -d "client_id=login"   -d "username=jmoreno"   -d "password=12345abcd"   -d "grant_type=password"
   "http://localhost:8080/auth/realms/RealmSpringBoot/protocol/openid-connect/token"
 -----------------
-image::images/TestUser.PNG[,width=600,height=600]
+image::images/TestUser.PNG[,width=400,height=400]
 
 
 
