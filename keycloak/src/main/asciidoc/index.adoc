@@ -1,0 +1,83 @@
+KeyCloak
+---------
+keycloak is a open source IAM, this offer authorization how SSO, social login and others , for more information visit
+the oficial documentation. http://https://www.keycloak.org[KeyCloak]
+
+Instalation
+^^^^^^^^^^^
+* Install docker image
++
+[source,python]
+-----------------
+docker run jboss/keycloak
+-----------------
+* Run docker with user administrator
++
+[source,python]
+-----------------
+docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak
+-----------------
+
+Create realm
+^^^^^^^^^^^^^
+http://localhost:8080/auth
+Login
+
+image::login.PNG[,width=600,height=600]
+
+Create Realm
+
+image::Realm1.PNG[,width=600,height=600]
+
+image::Realm2.PNG[,width=600,height=600]
+
+Create Client
+^^^^^^^^^^^^^
+image::Clients1.PNG[,width=600,height=600]
+
+image::Clients2.PNG[,width=600,height=600]
+
+image::Clients3.PNG[,width=600,height=600]
+
+Create role
+^^^^^^^^^^^
+image::Roles1.PNG[,width=600,height=600]
+
+image::Roles2.PNG[,width=600,height=600]
+
+Create user
+^^^^^^^^^^^
+image::Users1.PNG[,width=600,height=600]
+
+image::Users2.PNG[,width=600,height=600]
+
+image::Users3.PNG[,width=600,height=600]
+
+image::Users4.PNG[,width=600,height=600]
+
+Activate User
+^^^^^^^^^^^^
+
+http://localhost:8080/auth/realms/RealmSpringBoot/account/applications
+
+image::loginRealm.PNG[,width=600,height=600]
+
+image::loginRealm2.PNG[,width=600,height=600]
+
+image::loginRealm3.PNG[,width=600,height=600]
+
+image::loginRealm4.PNG[,width=600,height=600]
+
+Test User
+^^^^^^^^^
+
+[source,python]
+-----------------
+curl -X POST   -d "client_id=login"   -d "username=jmoreno"   -d "password=12345abcd"   -d "grant_type=password"
+  "http://localhost:8080/auth/realms/RealmSpringBoot/protocol/openid-connect/token"
+-----------------
+image::TestUser.PNG[,width=600,height=600]
+
+
+
+
