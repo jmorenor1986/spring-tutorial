@@ -27,46 +27,46 @@ image::login.PNG[,width=600,height=600]
 
 Create Realm
 
-image::Realm1.PNG[,width=600,height=600]
+image::images/Realm1.PNG[,width=600,height=600]
 
-image::Realm2.PNG[,width=600,height=600]
+image::images/Realm2.PNG[,width=600,height=600]
 
 Create Client
 ^^^^^^^^^^^^^
-image::Clients1.PNG[,width=600,height=600]
+image::images/Clients1.PNG[,width=600,height=600]
 
-image::Clients2.PNG[,width=600,height=600]
+image::images/Clients2.PNG[,width=600,height=600]
 
-image::Clients3.PNG[,width=600,height=600]
+image::images/Clients3.PNG[,width=600,height=600]
 
 Create role
 ^^^^^^^^^^^
-image::Roles1.PNG[,width=600,height=600]
+image::images/Roles1.PNG[,width=600,height=600]
 
-image::Roles2.PNG[,width=600,height=600]
+image::images/Roles2.PNG[,width=600,height=600]
 
 Create user
 ^^^^^^^^^^^
-image::Users1.PNG[,width=600,height=600]
+image::images/Users1.PNG[,width=600,height=600]
 
-image::Users2.PNG[,width=600,height=600]
+image::images/Users2.PNG[,width=600,height=600]
 
-image::Users3.PNG[,width=600,height=600]
+image::images/Users3.PNG[,width=600,height=600]
 
-image::Users4.PNG[,width=600,height=600]
+image::images/Users4.PNG[,width=600,height=600]
 
 Activate User
 ^^^^^^^^^^^^
 
 http://localhost:8080/auth/realms/RealmSpringBoot/account/applications
 
-image::loginRealm.PNG[,width=600,height=600]
+image::images/loginRealm.PNG[,width=600,height=600]
 
-image::loginRealm2.PNG[,width=600,height=600]
+image::images/loginRealm2.PNG[,width=600,height=600]
 
-image::loginRealm3.PNG[,width=600,height=600]
+image::images/loginRealm3.PNG[,width=600,height=600]
 
-image::loginRealm4.PNG[,width=600,height=600]
+image::images/loginRealm4.PNG[,width=600,height=600]
 
 Test User
 ^^^^^^^^^
@@ -76,7 +76,7 @@ Test User
 curl -X POST   -d "client_id=login"   -d "username=jmoreno"   -d "password=12345abcd"   -d "grant_type=password"
   "http://localhost:8080/auth/realms/RealmSpringBoot/protocol/openid-connect/token"
 -----------------
-image::TestUser.PNG[,width=600,height=600]
+image::images/TestUser.PNG[,width=600,height=600]
 
 
 
